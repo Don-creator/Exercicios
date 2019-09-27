@@ -1,0 +1,11 @@
+C:\Users\49390062802\Documents\Exercicios\Aluno\obj\Debug\netcoreapp2.2\Alunos.csprojAssemblyReference.cache
+C:\Users\49390062802\Documents\Exercicios\Aluno\obj\Debug\netcoreapp2.2\Alunos.csproj.CoreCompileInputs.cache
+C:\Users\49390062802\Documents\Exercicios\Aluno\obj\Debug\netcoreapp2.2\Alunos.AssemblyInfoInputs.cache
+C:\Users\49390062802\Documents\Exercicios\Aluno\obj\Debug\netcoreapp2.2\Alunos.AssemblyInfo.cs
+C:\Users\49390062802\Documents\Exercicios\Aluno\bin\Debug\netcoreapp2.2\Alunos.deps.json
+C:\Users\49390062802\Documents\Exercicios\Aluno\bin\Debug\netcoreapp2.2\Alunos.runtimeconfig.json
+C:\Users\49390062802\Documents\Exercicios\Aluno\bin\Debug\netcoreapp2.2\Alunos.runtimeconfig.dev.json
+C:\Users\49390062802\Documents\Exercicios\Aluno\bin\Debug\netcoreapp2.2\Alunos.dll
+C:\Users\49390062802\Documents\Exercicios\Aluno\bin\Debug\netcoreapp2.2\Alunos.pdb
+C:\Users\49390062802\Documents\Exercicios\Aluno\obj\Debug\netcoreapp2.2\Alunos.dll
+C:\Users\49390062802\Documents\Exercicios\Aluno\obj\Debug\netcoreapp2.2\Alunos.pdb
