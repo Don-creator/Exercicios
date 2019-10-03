@@ -15,11 +15,10 @@ namespace Empresa
                 Console.WriteLine("o salario novo é " + salarionovo);
             }
 
-           else if(salario==500.00){
+        else if(salario==500.00){
                 salarionovo = salario+(salario* 0);
                 Console.WriteLine("o salario não obteve aumento " + salarionovo);
-            }
-          
+            }  
         }
     }
 }
