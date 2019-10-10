@@ -50,6 +50,7 @@ namespace TodoList {
                         break;
                     case 3:
                         System.Console.WriteLine ("Tchau!");
+                        SaveItem(todoList, filePath);
                         break;
                     default:
                         System.Console.WriteLine ("Opção inválida");
@@ -118,8 +119,7 @@ namespace TodoList {
                     todoList.RemoveAt(index);
                 }
             } while(true);
-
+            
         }
-
     }
-}
+}       
