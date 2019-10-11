@@ -4,10 +4,32 @@ namespace ByteBank
 {
     public class Cliente
     {
-        public string CPF;
-        public string Nome;
-        public string Email;
-        public string Senha;
+        private string _CPF;
+        private string _Nome;
+        private string _Email;
+        private string _Senha;
+
+        public string Senha
+        {
+            get { return _Senha; }
+        }
+
+        public string CPF
+        {
+            get { return _CPF; }
+            set { _CPF = value; }
+        }
+
+        public string Nome {
+            get { return _Nome; }
+            set { _Nome = value; }
+        }
+
+        public string Email
+        {
+            get { return _Email ; }
+            set { _Email = value; }
+        }
 
         public Cliente(string Nome, string CPF, string Email)
         {
@@ -18,7 +40,7 @@ namespace ByteBank
 
         public bool TrocaSenha(string Senha){
             if ((Senha.Length > 6 ) && (Senha.Length < 16)){
-                this.Senha = Senha;
+                this._Senha = Senha;
                 return true;
             }else {
                 return false;
