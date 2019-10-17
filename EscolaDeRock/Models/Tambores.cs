@@ -2,7 +2,8 @@ using System;
 using EscolaDeRock.Interface;
 
 namespace EscolaDeRock.Models {
-    public class Tambores {
+    public class Tambores : InstrumentoMusical, IPercursao
+    {
         public bool ManterRitmo () {
             Console.WriteLine ("Mantendo o ritmo dos Tambores.");
             return true;

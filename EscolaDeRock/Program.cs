@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using EscolaDeRock.Models;
+using EscolaDeRock.Interface;
 
 namespace EscolaDeRock {
     enum FormacaoEnum : int {
@@ -22,13 +24,15 @@ namespace EscolaDeRock {
         MELODIA
     }
     class Program {
-        static void Main (string[] args) {
+        static void Main (string[] args) 
+        {
             bool querSair = true;
 
             string[] itensMenuPrincipal = Enum.GetNames (typeof (FormacaoEnum));
             string[] itensMenuCategoria = Enum.GetNames (typeof (CategoriasEnum));
 
-            var opçoesFormacao = new List<string> () {
+            var opçoesFormacao = new List<string>()
+            {
                 "     -0                         ",
                 "     -1                     "
             };
@@ -41,9 +45,10 @@ namespace EscolaDeRock {
 
                 do {
                     #region Area do Menu
+                    Console.Clear();
+                    
                     Console.WriteLine (menuBar);
                     Console.BackgroundColor = ConsoleColor.DarkCyan;
-                    Console.BackgroundColor = ConsoleColor.Black;
                     Console.WriteLine ("      Seja bem-vinda@!    ");
                     Console.WriteLine ("     Escolha uma formação:      ");
                     Console.ResetColor ();
@@ -51,16 +56,18 @@ namespace EscolaDeRock {
 
                     for (int i = 0; i < opçoesFormacao.Count; i++) {
                         string Titulo = itensMenuPrincipal[i];
-                        if (opcaoFormacaoSelecionada == i) {
+                        if (opçoesFormacaoSelecionada  == i)
+                        {
                             Console.BackgroundColor = ConsoleColor.DarkRed;
                             Console.WriteLine (opçoesFormacao[opçoesFormacaoSelecionada].Replace ("-", ">").Replace (i.ToString (), Titulo));
-                            Console.ResetColor;
+                            Console.ResetColor();
                         } else {
                             Console.WriteLine (opçoesFormacao[i].Replace (i.ToString (), Titulo));
                         }
                     }
                     var key = Console.ReadKey (true).Key;
-                    switch (key) {
+                    switch (key)
+                    {
                         case ConsoleKey.UpArrow:
                             opçoesFormacaoSelecionada = opçoesFormacaoSelecionada == 0 ? opçoesFormacaoSelecionada : --opçoesFormacaoSelecionada;
                             break;
@@ -74,7 +81,7 @@ namespace EscolaDeRock {
 
                     #endregion
 
-                } while (formacaoEscolhida);
+                } while (!formacaoEscolhida);
             } while (!querSair);
         }
     }
