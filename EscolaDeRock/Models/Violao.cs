@@ -2,7 +2,7 @@ using System;
 using EscolaDeRock.Interface;
 
 namespace EscolaDeRock.Models {
-    public class Violao : InstrumentoMusical, IHarmonia, IMelodia, IPercursao {
+    public class Violao : InstrumentoMusical, IHarmonia, IMelodia, IPercussao {
         public bool ManterRitmo () {
             Console.WriteLine ("Mantendo o ritmo do Violao");
             return true;

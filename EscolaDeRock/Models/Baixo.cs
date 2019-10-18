@@ -2,7 +2,7 @@ using System;
 using EscolaDeRock.Interface;
 namespace EscolaDeRock.Models
 {
-    public class Baixo :  InstrumentoMusical, IPercursao, IHarmonia
+    public class Baixo :  InstrumentoMusical, IPercussao, IHarmonia
     {
         public bool ManterRitmo()
         {
