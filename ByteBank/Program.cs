@@ -3,99 +3,96 @@
 namespace ByteBank {
     class Program {
         static void Main (string[] args) {
-            #region Cadastro de Cliente. 
-
-            Console.WriteLine ("ByteBank - Cadastor do Cliente");
+            Console.WriteLine ("Cadastro de Clientes");
+            Console.WriteLine ();
             Console.Write ("Nome: ");
-            string Nome = Console.ReadLine ();
-            Console.Write ("CPF: ");
-            string CPF = Console.ReadLine ();
+            string nome = Console.ReadLine ();
+            Console.Write ("Cpf: ");
+            string cpf = Console.ReadLine ();
             Console.Write ("Email: ");
-            string Email = Console.ReadLine ();
+            string email = Console.ReadLine ();
 
-            Cliente cliente1 = new Cliente (Nome, CPF, Email);
-            Console.WriteLine (cliente1.Senha);
+            Cliente cliente1 = new Cliente (nome, cpf, email);
 
             bool TrocouSenha = false;
-
             do {
-                Console.Write ("Senha: ");
-                string Senha = Console.ReadLine ();
-                TrocouSenha = cliente1.TrocaSenha (Senha);
-                if (TrocouSenha) {
-                    Console.WriteLine ("Senha alterada com sucesso");
+                Console.Write ("Digite a Senha: ");
+                string senha = Console.ReadLine ();
+                TrocouSenha = cliente1.TrocaSenha (senha);
+                if (!TrocouSenha) {
+                    Console.WriteLine ("Senha nao atende aos requisitos");
                 } else {
-                    Console.WriteLine ("Senha Invalida");
+                    Console.WriteLine ("Senha Trocada com sucesso");
                 }
             } while (!TrocouSenha);
+
+            Console.WriteLine ("Cadastro de Conta Corrente");
             Console.WriteLine ();
+            Console.Write ("Agencia: ");
+            int agencia = int.Parse (Console.ReadLine ());
+            Console.Write ("Conta: ");
+            int conta = int.Parse (Console.ReadLine ());
+            //Console.Write("Titular: ");
+            //string titular = Console.ReadLine();
 
-            Console.WriteLine ("ByteBank - Cadastro da Conta");
-            Console.Write ("Entre com a Agencia: ");
-            int Agencia = int.Parse (Console.ReadLine ());
-            Console.Write ("Entre com a Conta: ");
-            int Conta = int.Parse (Console.ReadLine ());
-
-            ContaCorrente contaCorrente1 = new ContaCorrente (Agencia, Conta, cliente1);
-            double Saldo;
+            bool saldoValido = false;
+            double saldo;
             do {
-                Console.Write ("Entre com o Saldo: ");
-                Saldo = double.Parse (Console.ReadLine ());
-                if (Saldo >= 0) {
-                    contaCorrente1.Saldo = Saldo;
+                Console.Write ("Digite o Saldo: ");
+                saldo = double.Parse (Console.ReadLine ());
+                if (saldo >= 0) {
+                    saldoValido = true;
                 } else {
-                    Console.WriteLine ("Valor do Saldo deve ser positivo.");
+                    Console.WriteLine ("O saldo não pode ser negativo");
                 }
-            } while (Saldo < 0);
-            Console.WriteLine ();
-            #endregion
+            } while (!saldoValido);
 
-            Cliente cliente2 = new Cliente ("Cesar", "123.123.123.12", "1@a.com");
-            ContaCorrente contaCorrente2 = new ContaCorrente ("123", "312", cliente2);
+            ContaCorrente contaCorrente = new ContaCorrente (agencia, conta, cliente1);
+            contaCorrente.Saldo = saldo;
 
-            #region Deposito.
-            Cliente Usuario = contaCorrente1.Titular;
-            Console.WriteLine ("ByteBank - Deposito em Conta");
-            Console.WriteLine ($"Bem Vindo - {Usuario.Nome}");
-            Console.WriteLine ($"Agencia {contaCorrente1.Agencia} Conta: {contaCorrente2.Numero}");
-            Console.WriteLine ($"Saldo: {contaCorrente1.Saldo}");
-            Console.WriteLine ();
-            Console.Write ("Digite o Valor do Deposito: ");
-            double Valor = double.Parse (Console.ReadLine ());
-            contaCorrente1.Deposito (Valor);
-            Console.WriteLine ();
-            Console.WriteLine ($"Novo Saldo: {contaCorrente1.Saldo}");
-            Console.WriteLine ();
-            #endregion
-
-            #region Saque.
-            Console.WriteLine ("ByteBank - Saque");
-            Console.WriteLine ($"Bem Vindo - {Usuario.Nome}");
-            Console.WriteLine ($"Agencia {contaCorrente1.Agencia} Conta: {contaCorrente2.Numero}");
-            Console.WriteLine ($"Saldo: {contaCorrente1.Saldo}");
-            Console.WriteLine ();
-            Console.Write ("Digite o Valor do Deposito: ");
+            Console.WriteLine ("ByteBank - Deposito");
+            Cliente usuario = contaCorrente.Titular;
+            Console.WriteLine ($"Bem vindo - {usuario.Nome}");
+            Console.WriteLine ($"Agencia: {contaCorrente.Agencia}   Conta: {contaCorrente.Numero}");
+            Console.WriteLine ($"Saldo: {contaCorrente.Saldo}");
+            Console.Write ("Digite o valor do Deposito: ");
             double valor = double.Parse (Console.ReadLine ());
-            contaCorrente1.Deposito (Valor);
-            Console.WriteLine ();
-            Console.WriteLine ($"Novo Saldo: {contaCorrente1.Saldo}");
+            saldo = contaCorrente.Deposito (valor);
+            Console.WriteLine ($"Saldo atual: {saldo}");
             Console.WriteLine ();
 
-            #endregion
-
-            #region Transferencia.
-            Console.WriteLine ("ByteBank - Transferencia");
-            Console.WriteLine ($"Bem Vindo - {Usuario.Nome}");
-            Console.WriteLine ($"Agencia {contaCorrente1.Agencia} Conta: {contaCorrente2.Numero}");
-            Console.WriteLine ($"Saldo: {contaCorrente1.Saldo}");
-            Console.WriteLine ();
-            Console.Write ("Digite o Valor do Transferencia: ");
-            Valor = double.Parse (Console.ReadLine ());
-            if (contaCorrente1.Transferencia (contaCorrente2, Valor)) {
-                Console.WriteLine ("Transferencia Efetuada");
+            Console.WriteLine ("ByteBank - Saque");
+            Console.WriteLine ($"Bem vindo - {usuario.Nome}");
+            Console.WriteLine ($"Agencia: {contaCorrente.Agencia}   Conta: {contaCorrente.Numero}");
+            Console.WriteLine ($"Saldo: {contaCorrente.Saldo}");
+            Console.Write ("Qual o valor do Saque? ");
+            valor = double.Parse (Console.ReadLine ());
+            if (contaCorrente.Saque (valor)) {
+                Console.WriteLine ("Saque realizado com sucesso. Retire as notas");
             } else {
                 Console.WriteLine ("Não foi possivel realizar a operação");
-            }
 
+            }
+            Console.WriteLine ($"Saldo atual: {contaCorrente.Saldo}");
+            Console.WriteLine ();
+
+            Cliente cliente2 = new Cliente ("Alexandre", "123.321.123-12", "a@a.com");
+            ContaCorrente contaCorrente2 = new ContaCorrente (123, 132, cliente2);
+            Console.WriteLine ("ByteBank - Transferencia");
+            Console.WriteLine ($"Bem vindo - {usuario.Nome}");
+            Console.WriteLine ($"Agencia: {contaCorrente.Agencia}   Conta: {contaCorrente.Numero}");
+            Console.WriteLine ($"Saldo origem: {contaCorrente.Saldo}");
+            Console.WriteLine ($"Saldo destino: {contaCorrente2.Saldo}");
+            Console.Write ("Digite o valor da tranferência: ");
+            valor = double.Parse (Console.ReadLine ());
+
+            if (contaCorrente.Transferencia (contaCorrente2, valor)) {
+                Console.WriteLine ("Tranferencia efetuada com sucesso.");
+            } else {
+                Console.WriteLine ("Operação não pode ser realizada.");
+            }
+            Console.WriteLine ($"Saldo origem: {contaCorrente.Saldo}");
+            Console.WriteLine ($"Saldo destino: {contaCorrente2.Saldo}");
         }
     }
+}

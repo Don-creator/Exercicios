@@ -87,7 +87,7 @@ namespace ByteBank2 {
             Console.WriteLine ($"Bem Vindo - {Usuario.Nome}");
             Console.WriteLine ($"Agencia {contaCorrente1.Agencia} Conta: {contaCorrente2.Numero}");
             Console.WriteLine ($"Saldo: {contaCorrente1.Saldo}");
-            Console.WriteLine ();
+            Console.WriteLine ();  
             Console.Write ("Digite o Valor do Deposito: ");
             double valor = double.Parse (Console.ReadLine ());
             contaCorrente1.Deposito (Valor);
