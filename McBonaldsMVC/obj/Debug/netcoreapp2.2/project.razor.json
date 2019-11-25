@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\49390062802\\Documents\\Exercicios\\McBonaldsMVC\\McBonaldsMVC.csproj",
+  "FilePath": "c:\\Users\\49390062802\\Desktop\\Exercicios\\McBonaldsMVC\\McBonaldsMVC.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -2956,24 +2956,11 @@
         }
       }
     ],
-<<<<<<< HEAD
     "CSharpLanguageVersion": 703
-=======
-    "CSharpLanguageVersion": 800
->>>>>>> 349a488b317a2408f3f05a309f7cf4e02ff6ba23
   },
   "RootNamespace": "McBonaldsMVC",
   "Documents": [
     {
-<<<<<<< HEAD
-      "FilePath": "Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views\\Shared\\Erro.cshtml",
-      "TargetPath": "Views\\Shared\\Erro.cshtml",
-=======
       "FilePath": "Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
@@ -2981,7 +2968,11 @@
     {
       "FilePath": "Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
->>>>>>> 349a488b317a2408f3f05a309f7cf4e02ff6ba23
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Shared\\Erro.cshtml",
+      "TargetPath": "Views\\Shared\\Erro.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -3005,6 +2996,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Cliente\\Historico.cshtml",
+      "TargetPath": "Views\\Cliente\\Historico.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -3015,7 +3011,6 @@
       "FileKind": "mvc"
     },
     {
-<<<<<<< HEAD
       "FilePath": "Views\\Cadastro\\Index.cshtml",
       "TargetPath": "Views\\Cadastro\\Index.cshtml",
       "FileKind": "mvc"
@@ -3026,8 +3021,6 @@
       "FileKind": "mvc"
     },
     {
-=======
->>>>>>> 349a488b317a2408f3f05a309f7cf4e02ff6ba23
       "FilePath": "Views\\Cliente\\Login.cshtml",
       "TargetPath": "Views\\Cliente\\Login.cshtml",
       "FileKind": "mvc"
@@ -3036,14 +3029,11 @@
       "FilePath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
-<<<<<<< HEAD
     },
     {
       "FilePath": "Views\\Pedido\\index.cshtml",
       "TargetPath": "Views\\Pedido\\index.cshtml",
       "FileKind": "mvc"
-=======
->>>>>>> 349a488b317a2408f3f05a309f7cf4e02ff6ba23
     }
   ],
   "SerializationFormat": "0.2"
