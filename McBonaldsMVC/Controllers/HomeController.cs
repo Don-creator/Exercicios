@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using McBonaldsMVC.Models;
+using McBonaldsMVC.ViewModels;
 
 namespace McBonaldsMVC.Controllers
 {
@@ -12,13 +13,10 @@ namespace McBonaldsMVC.Controllers
     {
         public IActionResult Index()
         {
-            ViewData["NomeView"] = "Home";
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
+            return View(new BaseViewModel()
+            {
+                NomeView = "Home"
+            });
         }
 
         

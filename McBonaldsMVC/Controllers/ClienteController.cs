@@ -6,14 +6,19 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace McBonaldsMVC.Controllers
 {
-    public class ClienteController : AbstractController
+    public class ClienteControllers : AbstractController
     {
         private ClienteRepository clienteRepository = new ClienteRepository();
         private PedidoRepository pedidoRepository = new PedidoRepository();
         [HttpGet]
         public IActionResult Login()
         {
-            return View();
+            return View(new BaseViewModel()
+            {
+                NomeView = "Login",
+                UsuarioEmail = ObterUsuarioSession(),
+                UsuarioNome = ObterUsuarioNomeSession()
+            });
         }
 
         [HttpPost]
