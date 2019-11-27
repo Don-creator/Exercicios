@@ -6,10 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace McBonaldsMVC.Controllers
 {
-    public class ClienteControllers : AbstractController
+    public class ClienteController : AbstractController
     {
         private ClienteRepository clienteRepository = new ClienteRepository();
         private PedidoRepository pedidoRepository = new PedidoRepository();
+
         [HttpGet]
         public IActionResult Login()
         {
@@ -46,7 +47,7 @@ namespace McBonaldsMVC.Controllers
                     }
                     else
                     {
-                        return View("Erro", new RespostaViewModel("Senha incorreta "));
+                        return View("Erro", new RespostaViewModel($"Senha incorreta {cliente.Senha} e {senha}"));
                     }
                 }
                 else
@@ -69,8 +70,19 @@ namespace McBonaldsMVC.Controllers
 
             return  View(new HistoricoViewlModel()
             {
-                Pedidos = pedidosCliente
+                Pedidos = pedidosCliente,
+                NomeView = "Histórico",
+                UsuarioEmail = ObterUsuarioSession(),
+                UsuarioNome = ObterUsuarioNomeSession()
             });
+        }
+
+        public IActionResult Logoff()
+        {
+            HttpContext.Session.Remove(SESSION_CLIENTE_EMAIL);
+            HttpContext.Session.Remove(SESSION_CLIENTE_NOME);
+            HttpContext.Session.Clear();
+            return RedirectToAction("Index", "Home");
         }
     }
 }

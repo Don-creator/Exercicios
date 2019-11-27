@@ -2971,11 +2971,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\49390062802\\Desktop\\Nova pasta\\Exercicios\\McBonaldsMVC\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\49390062802\\Desktop\\Nova pasta\\Exercicios\\McBonaldsMVC\\Views\\Shared\\_HeaderHomePage.cshtml",
       "TargetPath": "Views\\Shared\\_HeaderHomePage.cshtml",
       "FileKind": "mvc"

@@ -9,16 +9,23 @@ using McBonaldsMVC.ViewModels;
 
 namespace McBonaldsMVC.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : AbstractController
     {
         public IActionResult Index()
         {
             return View(new BaseViewModel()
             {
-                NomeView = "Home"
-            });
+                NomeView = "Home",
+                UsuarioEmail = ObterUsuarioSession(),
+                UsuarioNome = ObterUsuarioNomeSession()
+            }
+            );
         }
 
-        
+        public IActionResult Privacy()
+        {
+            return View();
+        }
+
     }
 }

@@ -99,7 +99,6 @@ C:\Users\49390062802\Desktop\Nova pasta\Exercicios\McBonaldsMVC\obj\Debug\netcor
 C:\Users\49390062802\Desktop\Nova pasta\Exercicios\McBonaldsMVC\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
 C:\Users\49390062802\Desktop\Nova pasta\Exercicios\McBonaldsMVC\obj\Debug\netcoreapp2.2\Razor\Views\Pedido\index.g.cshtml.cs
 C:\Users\49390062802\Desktop\Nova pasta\Exercicios\McBonaldsMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Erro.g.cshtml.cs
-C:\Users\49390062802\Desktop\Nova pasta\Exercicios\McBonaldsMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
 C:\Users\49390062802\Desktop\Nova pasta\Exercicios\McBonaldsMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Sucesso.g.cshtml.cs
 C:\Users\49390062802\Desktop\Nova pasta\Exercicios\McBonaldsMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
 C:\Users\49390062802\Desktop\Nova pasta\Exercicios\McBonaldsMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_HeaderHomePage.g.cshtml.cs
