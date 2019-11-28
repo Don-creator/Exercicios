@@ -110,3 +110,4 @@ C:\Users\49390062802\Desktop\Nova pasta\Exercicios\McBonaldsMVC\obj\Debug\netcor
 C:\Users\49390062802\Desktop\Nova pasta\Exercicios\McBonaldsMVC\obj\Debug\netcoreapp2.2\McBonaldsMVC.RazorTargetAssemblyInfo.cs
 C:\Users\49390062802\Desktop\Nova pasta\Exercicios\McBonaldsMVC\obj\Debug\netcoreapp2.2\McBonaldsMVC.Views.pdb
 C:\Users\49390062802\Desktop\Nova pasta\Exercicios\McBonaldsMVC\obj\Debug\netcoreapp2.2\McBonaldsMVC.csproj.CopyComplete
+C:\Users\49390062802\Desktop\Nova pasta\Exercicios\McBonaldsMVC\obj\Debug\netcoreapp2.2\Razor\Views\Administrador\Dashboard.g.cshtml.cs
