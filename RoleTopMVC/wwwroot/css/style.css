@@ -83,10 +83,10 @@ section {
     background-size: cover;
     width: 100%;
     text-align: center;
-    padding: 17em;
+    padding: 0;
     margin: 0;
-    
- }
+    box-sizing: border-box;
+}
 
 footer {
     background-color: #D2D2D2 ;
@@ -109,15 +109,15 @@ nav a {
 .food-container > img {
     width: 30%;
     align-items: center;
- }
+}
 
- .Balada > img {
+.Balada > img {
     background-image: url()
     width: 30%;
     align-items: center;
- }
+}
 
- body {
+body {
     background-color: #BCB6FF;
     font-family: 'Oswald', sans-serif;
     text-align: center;
