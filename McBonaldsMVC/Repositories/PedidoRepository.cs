@@ -65,6 +65,45 @@ namespace McBonaldsMVC.Repositories
             }
             return pedidos;
         }
+
+        public Pedido ObterPor(ulong id)
+        {
+            var pedidosTotais = ObterTodos();
+            foreach (var pedido in pedidosTotais)
+            {
+                if(id.Equals(pedido.Id))
+                {
+                    return pedido;
+                }
+            }
+            return null;
+        }
+
+        public bool Atualizar(Pedido pedido)
+        {
+            var pedidosTotais = File.ReadAllLines(PATH);
+            var pedidoCSV = PrepararPedidoCSV(pedido);
+            var linhaPedido = -1;
+            var resultado = false;
+
+            for (int i = 0; i < pedidosTotais.Length; i++)
+            {
+                var idConvertido = ulong.Parse(ExtrairValorDoCampo("id", pedidosTotais[i]));
+                if(pedido.Id.Equals(idConvertido))
+                {
+                    linhaPedido = i;
+                    resultado = true;
+                }
+            }
+
+            if(resultado)
+            {
+                pedidosTotais[linhaPedido] = pedidoCSV;
+                File.WriteAllLines(PATH, pedidosTotais);
+            }
+
+            return resultado;
+        }
         private string PrepararPedidoCSV(Pedido pedido)
         {
             Cliente c = pedido.Cliente;

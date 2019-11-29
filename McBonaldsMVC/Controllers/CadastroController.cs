@@ -1,4 +1,5 @@
 using System;
+using McBonaldsMVC.Enums;
 using McBonaldsMVC.Models;
 using McBonaldsMVC.Repositories;
 using McBonaldsMVC.ViewModels;
@@ -20,7 +21,7 @@ namespace McBonaldsMVC.Controllers {
         public IActionResult CadastrarCliente (IFormCollection form) {
             Cliente cliente = new Cliente (form["nome"], form["endereco"], form["telefone"], form["senha"], form["email"], DateTime.Parse (form["data-nascimento"]));
             try {
-
+                cliente.TipoUsuario = (uint) TiposUsuario.CLIENTE;
                 clienteRepository.Inserir (cliente);
 
                 return View ("Sucesso", new RespostaViewModel () {
