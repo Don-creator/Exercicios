@@ -14,7 +14,6 @@ namespace McBonaldsMVC.Models
                 this.DataDoPedido = dataDoPedido;
                 this.PrecoTotal = precoTotal;
                 this.Status = status;
-               
         }
                 public ulong Id {get;set;}
         public Cliente Cliente {get;set;}
