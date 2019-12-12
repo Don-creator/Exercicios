@@ -1,0 +1,11 @@
+main
+{
+    height: 50vh;
+}
+footer {
+    background-color: #D2D2D2 ;
+    font-size: 1.5em;
+    margin-top: 1em;
+    bottom: 0px;
+    width: 100%;
+}
