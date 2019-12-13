@@ -11,7 +11,29 @@ html {
 #Logo {
     height: 20%;
     width: 20%;
+    
 }
+
+.Tremidinha :hover{
+    animation: tremer 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes tremer {
+    0%{transform: translate(1px,1px) rotate(0deg);}
+    10%{transform: translate(-1px,-2px) rotate(-1deg);}
+    20%{transform: translate(-2px,0px) rotate(1deg);}
+    30%{transform: translate(2px,2px) rotate(0deg);}
+    40%{transform: translate(1px,-1px) rotate(1deg);}
+    50%{transform: translate(-1px,2px) rotate(-1deg);}
+    60%{transform: translate(-2px,1px) rotate(0deg);}
+    70%{transform: translate(2px,1px) rotate(-1deg);}
+    80%{transform: translate(-1px,-1px) rotate(1deg);}
+    90%{transform: translate(1px,2px) rotate(0deg);}
+    100%{transform: translate(1px,-2px) rotate(-1deg);}
+}
+
+
 
 .Logo-Background {
     background-color: #905AFF;
@@ -88,10 +110,8 @@ section {
     box-sizing: border-box;
 }
 
-footer {
-    background-color: #D2D2D2 ;
-    font-size: 1.5em;
-}
+
+
 
 nav  #bt-mobile-menu {
     display : none ;
@@ -179,3 +199,19 @@ body {
         flex-direction: column;
     }
 }
+
+#Galeriade {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.Text img {
+    filter: grayscale(100%);
+}
+
+.Text img:hover {
+    filter: grayscale(0%);
+    box-shadow: 8.5px 8.5px #D2D2D2;
+}
+

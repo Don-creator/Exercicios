@@ -1,10 +1,11 @@
+<main>
 <section id="login">
                 <strong>
                     <em>
                         <h1>Cadastro</h1>
                     </em>
                 </strong>
-                <form method="POST" action='@Url.Action("CadastrarCliente", "Cadastro")'></form>
+                <form method="POST" action='@Url.Action("Cadastrar", "Cadastro")'>
                 <br>
                 <div>
                     <label for="nome">Nome Completo</label>
@@ -20,26 +21,31 @@
                     <div>
                     <label for="senha">Senha</label>
                     <br />
-                    <input id="confirmar-senha" type="password" maxlength="20" minlength="6" name="confirmar-senha" />
+                    <input id="senha" type="password" maxlength="20" minlength="6" name="senha" />
+                </div>
+                
+                    <div>
+                    <label for="endereco">Endereco</label>
+                    <br />
+                    <input id="endereco" type="endereco" maxlength="20" minlength="3" name="endereco" />
                 </div>
 
                 <div>
-                    <label for="CPF">CPF</label>
-                    <br>
-                    <input id="cpf" type="text" maxlength="20" minlength="3" name="cpf" />
-                </div>
-                
-                <div>
-                    <label for="Telefone">Telefone</label>
+                    <label for="telefone">Telefone</label>
                     <br>
                     <input id="telefone" type="telefone" maxlength="20" minlength="3" name="telefone" />
                 </div>
-        
+                <div>
+                    <label for="cpf">CPF/CNPJ</label>
+                    <br>
+                    <input id="cpf" type="cpf" maxlength="20" minlength="3" name="cpf" />
+                </div>
+                <br>
                 <input type="submit" value="Entrar!" />
+                </form> 
             <br>
             <br>
             <p>Ainda não tem um cadastro? Cadastre-se</p>
         </section>
         <br>
-        <br>
-        <img src="cadastro.jfif">
+        </main>

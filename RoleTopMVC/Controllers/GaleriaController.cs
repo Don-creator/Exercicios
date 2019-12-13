@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using RoletopMVC.ViewModels;
 
 namespace RoletopMVC.Controllers
 {
@@ -6,7 +7,14 @@ namespace RoletopMVC.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+
+            GaleriaViewModel gvm = new GaleriaViewModel();
+
+            return View(new BaseViewModel(){
+                NomeView = "Cadastro",
+                UsuarioEmail = ObterUsuarioSession(),
+                UsuarioNome = ObterUsuarioNomeSession()
+            });
         }
     }
-}
+} 

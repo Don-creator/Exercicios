@@ -81,7 +81,9 @@ section {
 footer {
     background-color: #D2D2D2 ;
     font-size: 1.5em;
-    margin-top: 240px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15.6em;
 }
 
 nav a {
@@ -150,6 +152,7 @@ div#bug {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 div#bug input {
     width: 173px;

@@ -44,8 +44,8 @@ namespace RoleTopMVC.Repositories
                 aluguel.Status = uint.Parse(ExtrairValorDoCampo("status_pedido", linha));
                 aluguel.Cliente.Nome = ExtrairValorDoCampo("cliente_nome", linha);
                 aluguel.Cliente.Email = ExtrairValorDoCampo("cliente_email", linha);
+                aluguel.DataDoAluguel = DateTime.Parse(ExtrairValorDoCampo("data_aluguel", linha));
                 aluguel.PrecoTotal = double.Parse(ExtrairValorDoCampo("preco_total", linha));
-                aluguel.dataDoAluguel = DateTime.Parse(ExtrairValorDoCampo("data_pedido", linha));
                 reservas.Add(aluguel);
             }
             return reservas;
@@ -87,7 +87,7 @@ namespace RoleTopMVC.Repositories
         }
         private string PrepararPedidoCSV (Aluguel aluguel) {
             Cliente c = aluguel.Cliente;
-            return $"id={aluguel.Id};status_aluguel={aluguel.Status};cliente_nome={c.Nome};cliente_email={c.Email};data_aluguel={aluguel.dataDoAluguel};preco_total={aluguel.PrecoTotal}";
+            return $"id={aluguel.Id};status_pedido={aluguel.Status};cliente_nome={c.Nome};cliente_email={c.Email};data_aluguel={aluguel.DataDoAluguel};preco_total={aluguel.PrecoTotal}";
         }
 
         

@@ -11,28 +11,15 @@ namespace RoletopMVC.Controllers
 
         protected string ObterUsuarioSession()
         {
-            var emailUsuario = HttpContext.Session.GetString(SESSION_CLIENTE_EMAIL);  
-            if(!string.IsNullOrEmpty(emailUsuario))
+            var usuario = HttpContext.Session.GetString(SESSION_CLIENTE_EMAIL);  
+            if(!string. IsNullOrEmpty(usuario))
             {
-                return emailUsuario;
+                return usuario;
             }
             else
             {
                 return "";
             }
-        }
-
-        protected string ObterUsuarioNomeSession()
-        {
-            var nomeUsuario = HttpContext.Session.GetString(SESSION_CLIENTE_NOME);
-            if(!string.IsNullOrEmpty(nomeUsuario))
-            {
-                return nomeUsuario;
-            } 
-            else 
-            {
-                return "";
-            } 
         }
 
         protected string ObterUsuarioTipoSession()
@@ -46,6 +33,18 @@ namespace RoletopMVC.Controllers
             {
                 return "";
             }
+        }
+        protected string ObterUsuarioNomeSession()
+        {
+            var nomeUsuario = HttpContext.Session.GetString(SESSION_CLIENTE_NOME);
+            if(!string.IsNullOrEmpty(nomeUsuario))
+            {
+                return nomeUsuario;
+            } 
+            else 
+            {
+                return "";
+            } 
         }
     }
 }

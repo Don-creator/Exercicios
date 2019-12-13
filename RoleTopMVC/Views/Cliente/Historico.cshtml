@@ -1,0 +1,28 @@
+@model RoletopMVC.ViewModels.HistoricoViewModel
+
+<main>
+    <h2>@ViewData["H2"]
+
+    </h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Cliente</th>
+                <th>Data e Hora</th>
+                <th>Preço</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach( var aluguel in Model.Alugueis ) {
+                <tr>
+                    <td>@aluguel.Cliente.Nome</td>
+                    <td>@aluguel.DataDoAluguel</td>
+                    <td>@aluguel.PrecoTotal</td>
+                    <td>@aluguel.Status</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</main>

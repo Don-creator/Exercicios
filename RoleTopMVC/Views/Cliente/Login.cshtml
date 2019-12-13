@@ -1,23 +1,23 @@
 <main>
         <h2>Login</h2>
-        <form method="GET" action='@Url.Action("Cliente", "Login")'>
-
+                <form method="POST" action='@Url.Action("Login", "Cliente")'>
+            <br>
             <div>
                 <label for="email">E-mail</label>
                 <br />
-                <input id="email" type="email" />
+                <input id="email" type="email" name="email" />
             </div>
-
-            <div>
+            <br>
+            <div> 
                 <label for="senha">Senha</label>
                 <br />
-                <input id="senha" type="password" />
+                <input id="senha" type="password" name="senha" />
             </div>
-
+            <br>
             <input type="submit" value="Entrar!" />
-        
+        <br>
         <div id="link-Cadastro">
-            <a href='@Url.Action("Index", "Cadastro")' >Quero me Cadastrar    
+            <a href='@Url.Action("Index", "Cadastro")' >Quero me Cadastrar  
             </a>
         </div>
         </form>

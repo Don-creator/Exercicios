@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\49390062802\\Desktop\\Nova pasta\\Exercicios\\RoleTopMVC\\RoleTopMVC.csproj",
+  "FilePath": "c:\\Users\\49390062802\\Desktop\\MVC\\Exercicios\\RoletopMVC\\RoleTopMVC.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -2961,43 +2961,73 @@
   "RootNamespace": "RoleTopMVC",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\49390062802\\Desktop\\Nova pasta\\Exercicios\\RoleTopMVC\\Views\\Shared\\_CookieConsentPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
+      "FilePath": "c:\\Users\\49390062802\\Desktop\\MVC\\Exercicios\\RoletopMVC\\Views\\Shared\\Sucesso.cshtml",
+      "TargetPath": "Views\\Shared\\Sucesso.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\49390062802\\Desktop\\Nova pasta\\Exercicios\\RoleTopMVC\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FilePath": "c:\\Users\\49390062802\\Desktop\\MVC\\Exercicios\\RoletopMVC\\Views\\Shared\\Erro.cshtml",
+      "TargetPath": "Views\\Shared\\Erro.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\49390062802\\Desktop\\Nova pasta\\Exercicios\\RoleTopMVC\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FilePath": "c:\\Users\\49390062802\\Desktop\\MVC\\Exercicios\\RoletopMVC\\Views\\Cadastro\\Index.cshtml",
+      "TargetPath": "Views\\Cadastro\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\49390062802\\Desktop\\Nova pasta\\Exercicios\\RoleTopMVC\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FilePath": "c:\\Users\\49390062802\\Desktop\\MVC\\Exercicios\\RoletopMVC\\Views\\Cliente\\Login.cshtml",
+      "TargetPath": "Views\\Cliente\\Login.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\49390062802\\Desktop\\Nova pasta\\Exercicios\\RoleTopMVC\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\49390062802\\Desktop\\Nova pasta\\Exercicios\\RoleTopMVC\\Views\\Home\\Index.cshtml",
+      "FilePath": "c:\\Users\\49390062802\\Desktop\\MVC\\Exercicios\\RoletopMVC\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\49390062802\\Desktop\\Nova pasta\\Exercicios\\RoleTopMVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "c:\\Users\\49390062802\\Desktop\\MVC\\Exercicios\\RoletopMVC\\Views\\Aluguel\\Index.cshtml",
+      "TargetPath": "Views\\Aluguel\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\49390062802\\Desktop\\MVC\\Exercicios\\RoletopMVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\49390062802\\Desktop\\Nova pasta\\Exercicios\\RoleTopMVC\\Views\\Shared\\_Layout.cshtml",
+      "FilePath": "c:\\Users\\49390062802\\Desktop\\MVC\\Exercicios\\RoletopMVC\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\49390062802\\Desktop\\MVC\\Exercicios\\RoletopMVC\\Views\\Galeria\\Index.cshtml",
+      "TargetPath": "Views\\Galeria\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\49390062802\\Desktop\\MVC\\Exercicios\\RoletopMVC\\Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\49390062802\\Desktop\\MVC\\Exercicios\\RoletopMVC\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\49390062802\\Desktop\\MVC\\Exercicios\\RoletopMVC\\Views\\Cliente\\Historico.cshtml",
+      "TargetPath": "Views\\Cliente\\Historico.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\49390062802\\Desktop\\MVC\\Exercicios\\RoletopMVC\\Views\\Administrador\\Dashboard.cshtml",
+      "TargetPath": "Views\\Administrador\\Dashboard.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\49390062802\\Desktop\\MVC\\Exercicios\\RoletopMVC\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     }
   ],

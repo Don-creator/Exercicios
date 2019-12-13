@@ -1,9 +1,11 @@
 @model  RoletopMVC.ViewModels.RespostaViewModel
+@{
+    ViewData["NavGaleria"] = "navSucesso";
+}
+
 <main>
     <h2>
         @Model.NomeView deu bom!
     </h2>
-    <p>
-        @Model.Mensagem
-    </p>
 </main>
+
